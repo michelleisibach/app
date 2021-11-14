@@ -4,7 +4,22 @@
 
 export const environment = {
   production: false,
-  mapboxkey: 'pk.eyJ1IjoibWljaGVsbGVpc2liYWNoIiwiYSI6ImNrdHZ1OGdhNjBud2cydXA4Mm83ZzRoeHkifQ.i590vDxjGEaBDzQI2PppQA'
+  mapboxkey: 'pk.eyJ1IjoibWljaGVsbGVpc2liYWNoIiwiYSI6ImNrdHZ1OGdhNjBud2cydXA4Mm83ZzRoeHkifQ.i590vDxjGEaBDzQI2PppQA',
+  geolocation: { 'type': 'FeatureCollection',
+  'features': [
+  {
+  'type': 'Feature',
+  'properties': {
+  'description':
+  '<strong>Make it Mount Pleasant</strong><p><a href="http://www.mtpleasantdc.com/makeitmtpleasant" target="_blank" title="Opens in a new window">Make it Mount Pleasant</a> is a handmade and vintage market and afternoon of live entertainment and kids activities. 12:00-6:00 p.m.</p>',
+  'icon': 'theatre-15'
+  },
+  'geometry': {
+  'type': 'Point',
+  'coordinates': [-77.038659, 38.931567]
+  }
+  }
+  ] }
 };
 
 /*

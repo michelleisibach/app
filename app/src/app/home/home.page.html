@@ -1,9 +1,19 @@
-<ion-header [translucent]="true">
-</ion-header>
-
 <ion-content [fullscreen]="true" id="fullscreen">
 
-    <div id="container">
-        <div id="map"></div>
-    </div>
+    <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+        <ion-fab-button color="light">
+            <ion-icon md="logo-apple" ios="chevron-back-circle-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="start">
+            <ion-fab-button color="dark" [routerLink]="['/home']">
+                <ion-icon name="map"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button color="light" [routerLink]="['/stores']">
+                <ion-icon name="bag-outline"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button color="light" [routerLink]="['/user']">
+                <ion-icon name="person-outline"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+    </ion-fab>
 </ion-content>

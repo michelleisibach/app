@@ -10,7 +10,7 @@ import * as mapboxgl from 'mapbox-gl';
 export class HomePage implements OnInit {
 
   map: mapboxgl.Map;
-  style = 'mapbox://styles/mapbox/streets-v11';
+  style = 'mapbox://styles/michelleisibach/cku0a7bz44bi117nwsautr8za';
   lat = 47.12772;
   lng = 8.31589;
   zoom = 12;
@@ -29,7 +29,7 @@ export class HomePage implements OnInit {
       center: [this.lng, this.lat]});
 
       this.map.on('load', () => {
-        this.map.resize();
+        this.map.resize();      
     });
   }
 
